@@ -2,3 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: bisque;
+  color: #000000;
+  font-family: Arial, sans-serif; /* Choose a default font-family */
+  line-height: 1.5; /* Improve readability with a base line-height */
+}
+
+a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline from links */
+}
+
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove the space below images */
+}
+
+button {
+  cursor: pointer; /* Change cursor to pointer for buttons */
+  background: none; /* Remove default button styling */
+  padding: 0; /* Reset padding */
+}
+
+body {
+  min-height: 100vh; /* Fallback for browsers not supporting dvh */
+  min-height: 100dvh; /* Primary usage */
+}
